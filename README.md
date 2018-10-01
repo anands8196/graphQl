@@ -10,7 +10,7 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
 Project Stack
 ---------------------------
 ### DATABASE
-* MongoDB  - Mongoose(Mongoose is a JavaScript framework that is commonly used in a Node.js application with a MongoDB database.) using mLab
+* MongoDB  - Mongoose(Mongoose is a JavaScript framework that is commonly used in a Node.js application with a MongoDB database.) using mLab. 
 ### SERVER (Node.JS) 
 * Express App
 * GraphQL Server
