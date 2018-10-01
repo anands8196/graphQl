@@ -7,12 +7,10 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
         *https://github.com/facebook/graphql
         *https://medium.freecodecamp.org/graphql-front-end-queries-made-easy-68e9d9ded283
 
-
-
 Project Stack
 ---------------------------
 ### DATABASE
-* MongoDB   ---Mongoose  (Using mLab)
+* MongoDB  - Mongoose(Mongoose is a JavaScript framework that is commonly used in a Node.js application with a MongoDB database.) using mLab
 ### SERVER (Node.JS) 
 * Express App
 * GraphQL Server
