@@ -11,7 +11,8 @@ Project Stack
 ---------------------------
 ### DATABASE
 * MongoDB  - Mongoose(Mongoose is a JavaScript framework that is commonly used in a Node.js application with a MongoDB database.) using mLab. 
-### SERVER (Node.JS) 
+### SERVER  
+* Node.JS
 * Express App
 * GraphQL Server
 ### CLIENT
