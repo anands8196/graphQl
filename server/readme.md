@@ -1,0 +1,1 @@
+Install nodemon,express,express-graphql,mongoose,graphql,lodash
