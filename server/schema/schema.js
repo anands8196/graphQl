@@ -2,7 +2,7 @@ const graphql = require('graphql');
 const { GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLID, GraphQLInt, GraphQLList, GraphQLNonNull } = graphql;
 const mongoose = require('mongoose');
 
-const _ = require('lodash');
+// const _ = require('lodash');
 
 // const Author = require('../models/author');
 // const Book = require('../models/book');
@@ -81,23 +81,32 @@ const RootQuery = new GraphQLObjectType({
             type: AuthorType,
             args: { id: { type: GraphQLID } },
             resolve(parent, args) {
-
                 // return _.find(authors, { id: args.id })
                 return Author.findById(args.id)
             }
         },
         books: {
             type: new GraphQLList(BookType),
+            args: {
+                // id: { type: GraphQLID },
+                name: { type: GraphQLString },
+                genre: { type: GraphQLString }
+            },
             resolve(parent, args) {
                 // return books
-                return Book.find({})
+                console.log(args)
+                return Book.find(args)
             }
         },
         authors: {
             type: new GraphQLList(AuthorType),
+            args: {
+                name: { type: GraphQLString },
+                age: { type: GraphQLInt }
+            },
             resolve(parent, args) {
                 // return authors
-                return Author.find({})
+                return Author.find(args)
             }
         }
     }
